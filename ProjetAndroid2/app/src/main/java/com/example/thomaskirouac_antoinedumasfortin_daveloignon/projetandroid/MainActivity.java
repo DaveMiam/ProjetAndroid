@@ -8,8 +8,19 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.Toast;
+import android.hardware.Sensor;
+import android.hardware.SensorEvent;
+import android.hardware.SensorEventListener;
+import android.hardware.SensorManager;
+import android.widget.TextView;
+
+
 
 public class MainActivity extends AppCompatActivity {
+
+    private SensorManager mSensorManager;
+
+    TextView tvHeading;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,4 +62,8 @@ public class MainActivity extends AppCompatActivity {
                 "The favorite list would appear on clicking this icon",
                 Toast.LENGTH_LONG).show();
     }
+
+
+
+
 }
